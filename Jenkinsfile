@@ -21,11 +21,11 @@ pipeline {
         }
 
         stage('Generate Tags') {
-            steps {
+          steps {
                 script {
-                    // Obtiene el SHA corto del commit actual sin basura de consola en Windows
+                    // Usamos la ruta exacta a git.exe entre comillas dobles y con barras invertidas dobles
                     def commit = bat(
-                        script: '@git rev-parse --short HEAD',
+                        script: '@"C:\\Program Files\\Git\\bin\\git.exe" rev-parse --short HEAD',
                         returnStdout: true
                     ).trim()
 
