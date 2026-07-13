@@ -1,0 +1,16 @@
+{
+  "name": "miapp",
+  "version": "1.0.0",
+  "description": "Aplicación de ejemplo para Jenkins Pipeline",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node tests/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
